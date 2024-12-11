@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entdecke Costa Rica</title>
+    <link rel="icon" href="/logo.svg" type="image/png">
+    <meta name="description" content="Entdecke Costa Rica: Erleben Sie unvergessliche Abenteuer, atemberaubende Natur, und authentische Kultur in Costa Rica. Buchen Sie jetzt Ihre Reise!">
+    <meta name="keywords" content="Costa Rica, Reisen, Abenteuer, Natur, Kultur, Touren, Öko-Tourismus, Urlaub Costa Rica">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="/logo.svg" alt="Entdecke Costa Rica Logo" style="max-height: 80px; margin-right: 10px;">
+            <span class="brand-text">Das Authentische Costa Rica</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#touren">Touren</a></li>
+                <li class="nav-item"><a class="nav-link" href="#kundenrezension">Kundenrezension</a></li>
+                <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+                <!-- Icon button to toggle translation element -->
+                <button class="btn btn-link" onclick="toggleTranslate()" aria-expanded="false" style="font-size: 1.5rem;">
+                    <i class="fas fa-globe"></i>
+                </button>
+
+                <!-- Translation element, initially hidden -->
+                <div id="translateContainer" style="display: none; text-align: center;">
+                    <div id="google_translate_element"></div>
+                </div>
+
+                <!-- Translation script -->
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+                    }
+
+                    // Function to toggle the translation element
+                    function toggleTranslate() {
+                        const translateContainer = document.getElementById('translateContainer');
+                        translateContainer.style.display = translateContainer.style.display === 'none' ? 'block' : 'none';
+                    }
+                </script>
+
+                <!-- Load Google Translate script -->
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- Hero-Bereich mit Auto-Slider -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+      <!-- Erste Folie -->
+      <div class="carousel-item active">
+        <div class="hero">
+            <div>
+                <p class="display-4">Entdecke das Herz von Costa Rica</p>
+                <p class="lead">Begleite uns auf unvergesslichen Touren, atemberaubenden Abenteuern und authentischen Erlebnissen.</p>
+                <a href="#find-us" class="btn custom-orange-btn btn-lg mt-3">Kontaktieren Sie Uns</a>
+            </div>
+        </div>
+      </div>
+      <!-- Zusätzliche Folien bei Bedarf hinzufügen -->
+    </div>
+</div>
+
+<!-- Über Uns -->
+<section id="about" class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Textbereich -->
+            <div class="col-md-6">
+                <h2 class="mb-4 text-center text-md-start">Über Entdecke Costa Rica</h2>
+                <p class="lead text-center text-md-start mb-4">Wir sind dein vertrauenswürdiger Partner für immersive und umweltfreundliche Touren durch Costa Rica. Unsere erfahrenen Guides begleiten dich auf eine Reise durch die atemberaubenden Landschaften, die reiche Kultur und die lebendige Tierwelt des Landes.</p>
+                <p class="text-center text-md-start">Ob du nach einem aufregenden Abenteuer oder einer ruhigen Auszeit suchst, wir haben die perfekte Tour für dich. Mit einem Fokus auf Nachhaltigkeit stellen wir sicher, dass jede Tour zum Erhalt der natürlichen Schönheit Costa Ricas beiträgt.</p>
+                <a href="https://calendly.com/yourusername" class="btn custom-orange-btn btn-lg mt-3" target="_blank">
+                    Teile uns deine Urlaubspläne mit
+                </a>
+                
+            </div>
+            <!-- Bildbereich -->
+            <div class="col-md-6" style="margin-top: 10px;">
+                <img src="/nauyaca.webp" alt="Costa Rica" class="img-fluid rounded shadow-lg">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="gallery" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-5">Unsere Gallery</h2>
+        <div class="row">
+            <!-- Image 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Gallery Image 1" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+            <!-- Image 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Gallery Image 2" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+            <!-- Image 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Gallery Image 3" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+            <!-- Image 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Gallery Image 4" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+            <!-- Image 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Gallery Image 5" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+            <!-- Image 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Gallery Image 6" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+               <!-- Image 4 -->
+               <div class="col-md-4 mb-4">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Gallery Image 4" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+            <!-- Image 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Gallery Image 5" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+            <!-- Image 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Gallery Image 6" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- Dienstleistungen Abschnitt -->
+<section id="touren" class="py-5 bg-light">
+    <div class="container text-center">
+        <h3 class="mb-5">Unsere Tour-Dienstleistungen</h3>
+        <div class="row g-4">
+            <!-- Abenteuertouren -->
+            <div class="col-md-4">
+                <div class="service-item p-4 rounded bg-white">
+                    <i class="service-icon fas fa-hiking mb-3"></i>
+                    <div class="service-title mb-3">Abenteuertouren</div> <!-- Changed h4 to div with class 'service-title' -->
+                    <p>Erkunden Sie Costa Ricas beeindruckende Berge, Vulkane und Wasserfälle. Unsere Abenteuertouren umfassen Wandern, Zip-Lining und mehr.</p>
+                </div>
+            </div>
+            <!-- Wildtier-Touren -->
+            <div class="col-md-4">
+                <div class="service-item p-4 rounded bg-white">
+                    <i class="service-icon fas fa-paw mb-3"></i>
+                    <div class="service-title mb-3">Wildtier-Touren</div> <!-- Changed h4 to div with class 'service-title' -->
+                    <p>Kommen Sie Costa Ricas unglaublichen Wildtieren in Nationalparks und geschützten Reservaten nahe, geführt von lokalen Experten.</p>
+                </div>
+            </div>
+            <!-- Öko-Touren -->
+            <div class="col-md-4">
+                <div class="service-item p-4 rounded bg-white">
+                    <i class="service-icon fas fa-leaf mb-3"></i>
+                    <div class="service-title mb-3">Öko-Touren</div> <!-- Changed h4 to div with class 'service-title' -->
+                    <p>Erleben Sie nachhaltiges Reisen mit unseren Öko-Touren, einschließlich Vogelbeobachtung, Naturwanderungen und kulturellen Erlebnissen.</p>
+                </div>
+            </div>
+            <!-- Luxus-Touren -->
+            <div class="col-md-4">
+                <div class="service-item p-4 rounded bg-white">
+                    <i class="service-icon fas fa-crown mb-3"></i>
+                    <div class="service-title mb-3">Luxus-Touren</div> <!-- Changed h4 to div with class 'service-title' -->
+                    <p>Genießen Sie Costa Ricas feinste Luxus-Erlebnisse, von privaten Touren bis hin zu Fünf-Sterne-Unterkünften und exklusiven Services.</p>
+                </div>
+            </div>
+            <!-- Kultur-Touren -->
+            <div class="col-md-4">
+                <div class="service-item p-4 rounded bg-white">
+                    <i class="service-icon fas fa-theater-masks mb-3"></i>
+                    <div class="service-title mb-3">Kultur-Touren</div> <!-- Changed h4 to div with class 'service-title' -->
+                    <p>Entdecken Sie die reiche Kultur Costa Ricas durch Kunst, Musik, lokale Küche und historische Sehenswürdigkeiten, geführt von leidenschaftlichen Einheimischen.</p>
+                </div>
+                <a href="/touren.html" class="btn btn-success btn-lg mt-4">Touren finden Sie hier</a>
+            </div>
+            <!-- Familien-Touren -->
+            <div class="col-md-4">
+                <div class="service-item p-4 rounded bg-white">
+                    <i class="service-icon fas fa-users mb-3"></i>
+                    <div class="service-title mb-3">Familien-Touren</div> <!-- Changed h4 to div with class 'service-title' -->
+                    <p>Genießen Sie Costa Rica als Familie mit maßgeschneiderten Touren, die Aktivitäten und Erlebnisse für alle Altersgruppen umfassen.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="kundenrezension" class="py-5 bg-light">
+    <div class="container text-center">
+        <h4 class="mb-5">Was unsere Kunden sagen</h4>
+        <div class="row">
+            <!-- Bewertung 1 -->
+            <div class="col-md-4 mb-4 mb-md-0">
+                <div class="review-item p-4 shadow-lg rounded bg-white">
+                    <img src="https://via.placeholder.com/100" alt="Kunde 1" class="rounded-circle mb-3" style="width: 100px; height: 100px;">
+                    <div class="review-name mb-2">Maria Gonzalez</div>
+                    <p class="font-italic">"Unsere Reise nach Costa Rica war ein wahr gewordener Traum! Das Team von [Ihr Agenturname] hat jedes Detail perfekt geplant, von den Dschungeltouren bis zu den atemberaubenden Stränden. Wir fühlten uns von Anfang bis Ende bestens betreut!"</p>
+                </div>
+            </div>
+            <!-- Bewertung 2 -->
+            <div class="col-md-4 mb-4 mb-md-0">
+                <div class="review-item p-4 shadow-lg rounded bg-white">
+                    <img src="https://via.placeholder.com/100" alt="Kunde 2" class="rounded-circle mb-3" style="width: 100px; height: 100px;">
+                    <div class="review-name mb-2">David Martinez</div>
+                    <p class="font-italic">"Die beste Urlaubserfahrung aller Zeiten! Von Wildtier-Touren bis hin zu gemütlichen Eco-Lodges hat [Ihr Agenturname] ein unvergessliches Abenteuer geschaffen. Wir können es kaum erwarten, unsere nächste Reise zu buchen!"</p>
+                </div>
+            </div>
+            <!-- Bewertung 3 -->
+            <div class="col-md-4 mb-4 mb-md-0">
+                <div class="review-item p-4 shadow-lg rounded bg-white">
+                    <img src="https://via.placeholder.com/100" alt="Kunde 3" class="rounded-circle mb-3" style="width: 100px; height: 100px;">
+                    <div class="review-name mb-2">Lucas Rivera</div>
+                    <p class="font-italic">"Ein perfekter Kurzurlaub! Jeder Teil der Reise war wunderschön kuratiert. Das Team von [Ihr Agenturname] weiß, wie man ein authentisches und bereicherndes Reiseerlebnis bietet. Absolut empfehlenswert!"</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Trennlinie -->
+        <hr class="my-4" />
+        
+        <div class="row">
+            <!-- Bewertung 4 -->
+            <div class="col-md-4 mb-4 mb-md-0">
+                <div class="review-item p-4 shadow-lg rounded bg-white">
+                    <img src="https://via.placeholder.com/100" alt="Kunde 4" class="rounded-circle mb-3" style="width: 100px; height: 100px;">
+                    <div class="review-name mb-2">Emma White</div>
+                    <p class="font-italic">"Unglaublicher Service und Liebe zum Detail! Vom Buchungsprozess bis zu den großartigen Ausflügen hat [Ihr Agenturname] ein Erlebnis geliefert, das unsere Erwartungen übertroffen hat. Wir sind so dankbar!"</p>
+                </div>
+            </div>
+            <!-- Bewertung 5 -->
+            <div class="col-md-4 mb-4 mb-md-0">
+                <div class="review-item p-4 shadow-lg rounded bg-white">
+                    <img src="https://via.placeholder.com/100" alt="Kunde 5" class="rounded-circle mb-3" style="width: 100px; height: 100px;">
+                    <div class="review-name mb-2">Sophia Adams</div>
+                    <p class="font-italic">"Eine unvergessliche Reise! [Ihr Agenturname] hat alles getan, um eine maßgeschneiderte Reiseroute für unsere Familie zu erstellen. Wir haben das Beste von Costa Rica erlebt, und es war wirklich ein einmaliges Abenteuer!"</p>
+                </div>
+            </div>
+            <!-- Bewertung 6 -->
+            <div class="col-md-4 mb-4 mb-md-0">
+                <div class="review-item p-4 shadow-lg rounded bg-white">
+                    <img src="https://via.placeholder.com/100" alt="Kunde 6" class="rounded-circle mb-3" style="width: 100px; height: 100px;">
+                    <div class="review-name mb-2">John Doe</div>
+                    <p class="font-italic">"Ein wirklich bemerkenswertes Erlebnis! Jedes Detail war sorgfältig geplant, und der persönliche Service machte unsere Reise zu etwas ganz Besonderem. Ich würde [Ihr Agenturname] jedem empfehlen!"</p>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+</section>
+
+
+<section id="kontakt" class="py-5 bg-white">
+    <div class="container text-center">
+        <h5 class="mb-5">Kontakt</h5>
+        <div class="row">
+           <!-- Adresse -->
+<div class="col-md-6 mb-4">
+    <div class="address-title mb-2">Unsere Adresse</div>
+    <p>123 Costa Rica Straße, Osa-Halbinsel, Costa Rica</p>
+    <p>Wir befinden uns im Herzen der Osa-Halbinsel, nur eine kurze Fahrt von den atemberaubenden Stränden und üppigen Regenwäldern der Region entfernt.</p>
+</div>
+
+<!-- Kontaktinformationen -->
+<div class="col-md-6 mb-4">
+    <div class="address-title mb-2">Kontaktinformationen</div>
+    <ul class="list-unstyled">
+        <li><strong><i class="fas fa-envelope"></i> E-Mail:</strong> <a href="mailto:reservierungendertukancr@gmail.com" class="text-dark text-decoration-none">reservierungendertukancr@gmail.com</a></li>
+        <li><strong><i class="fas fa-phone-alt"></i> Telefon:</strong> <a href="tel:+1234567890" class="text-dark text-decoration-none">+1 (234) 567-890</a></li>
+        <li><strong><i class="fab fa-whatsapp"></i> WhatsApp:</strong> <a href="https://wa.me/1234567890" class="text-dark text-decoration-none">+1 (234) 567-890</a></li>
+    </ul>
+</div>
+</div>
+
+<!-- Google-Karte -->
+<div class="my-5">
+    <div class="address-title mb-3">Finden Sie uns auf der Karte</div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.27991579584!2d-77.0368707!3d38.907211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86b6c43b85e47a69%3A0x1234567890!2sOsa%20Peninsula%2C%20Costa%20Rica!5e0!3m2!1sde!2sus!4v1648706195922!5m2!1sde!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+    
+    </div>
+    <!-- Button zum Buchen eines Treffens -->
+<div class="Treffen">
+    <a href="https://calendly.com/yourusername" class="btn custom-orange-btn btn-lg" target="_blank">Hier ein Treffen buchen</a>
+</div>
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications" class="py-5 bg-white">
+    <div class="container text-center">
+        <div class="mb-5" style="font-size: 20px;">Unsere Zertifizierungen</div>
+        <div class="row g-4">
+            <!-- Certification 1 -->
+            <div class="col-md-2 col-sm-6">
+                <div class="certification-item">
+                    <img src="/cert.svg" alt="Certification 1" class="img-fluid">
+                </div>
+            </div>
+            <!-- Certification 2 -->
+            <div class="col-md-2 col-sm-6">
+                <div class="certification-item">
+                    <img src="/cert.svg" alt="Certification 2" class="img-fluid">
+                </div>
+            </div>
+            <!-- Certification 3 -->
+            <div class="col-md-2 col-sm-6">
+                <div class="certification-item">
+                    <img src="/cert.svg" alt="Certification 3" class="img-fluid">
+                </div>
+            </div>
+            <!-- Certification 4 -->
+            <div class="col-md-2 col-sm-6">
+                <div class="certification-item">
+                    <img src="/cert.svg" alt="Certification 4" class="img-fluid">
+                </div>
+            </div>
+              <!-- Certification 4 -->
+              <div class="col-md-2 col-sm-6">
+                <div class="certification-item">
+                    <img src="/cert.svg" alt="Certification 4" class="img-fluid">
+                </div>
+            </div>
+              <!-- Certification 4 -->
+              <div class="col-md-2 col-sm-6">
+                <div class="certification-item">
+                    <img src="/cert.svg" alt="Certification 4" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<footer class="py-5 text-white" style="background-color: rgb(241, 160, 10); font-weight: 500">
+    <div class="container">
+        <div class="row">
+            <!-- Firmeninformation -->
+            <div class="col-md-4 mb-4">
+                <p><strong>Tukan Reiseabenteuer</strong></p>
+                <p>
+                    Stellen Sie Ihr Unternehmen kurz vor, indem Sie auf Ihre Mission, Werte oder einzigartigen Dienstleistungen eingehen. Heben Sie hervor, was Sie auszeichnet und warum Kunden Ihrer Marke vertrauen sollten.
+                </p>
+            </div>
+
+            <!-- Kontaktinformationen -->
+            <div class="col-md-4 mb-4">
+                <p><strong>Kontaktinformationen</strong></p>
+                <ul class="list-unstyled">
+                    <li><strong><i class="fas fa-envelope"></i> E-Mail:</strong> 
+                        <a href="mailto:kontakt@ihrunternehmen.de" class="text-white text-decoration-none" aria-label="E-Mail an kontakt@ihrunternehmen.de">
+                            kontakt@ihrunternehmen.de
+                        </a>
+                    </li>
+                    <li><strong><i class="fas fa-phone-alt"></i> Telefon:</strong> 
+                        <a href="tel:+1234567890" class="text-white text-decoration-none" aria-label="Anrufen unter +49 (234) 567-890">
+                            +49 (234) 567-890
+                        </a>
+                    </li>
+                    <li><strong><i class="fab fa-whatsapp"></i> WhatsApp:</strong> 
+                        <a href="https://wa.me/1234567890" class="text-white text-decoration-none" aria-label="WhatsApp kontaktieren">
+                            +49 (234) 567-890
+                        </a>
+                    </li>
+                    <li><strong><i class="fas fa-business-time"></i> Geschäftszeiten:</strong> 
+                        Montag bis Freitag, 9:00 - 18:00 Uhr. <br>
+                        Samstags: 9:00 - 13:00 Uhr. Sonntags: Geschlossen.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Soziale Medien -->
+            <div class="col-md-4 mb-4">
+                <p><strong>Folgen Sie uns</strong></p>
+                <div class="d-flex">
+                    <a href="https://facebook.com/ihreseite" class="text-white me-3" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="https://twitter.com/ihreseite" class="text-white me-3" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                    <a href="https://linkedin.com/ihreseite" class="text-white me-3" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="https://instagram.com/ihreseite" class="text-white" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-4">
+
+        <!-- Footer Bottom -->
+        <div class="text-center">
+            <p>&copy; 2024 <a href="https://www.nativainnovations.com" class="text-white text-decoration-none">Nativa Innovations</a>. Alle Rechte vorbehalten.</p>
+
+                <a href="#" class="text-white text-decoration-none">Datenschutzrichtlinie</a> | 
+                <a href="#" class="text-white text-decoration-none">Nutzungsbedingungen</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- Bootstrap-Bundle mit Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entdecke Costa Rica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Globales Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333333;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+        
+        /* Navbar Styling */
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-brand, .nav-link {
+            color: #ffa600 !important;
+            font-weight: 600;
+        }
+        .navbar-toggler-icon {
+            background-color: #ffa600;
+        }
+        
+        /* Hero-Bereich */
+        .hero {
+            background: url('/banner.jpg') no-repeat center center;
+            background-size: cover;
+            height: 120vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        .hero .btn-primary {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+
+        /* Service-Bereich */
+        .service-icon {
+            font-size: 48px;
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+        .service-item {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .service-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Kontakt-Bereich */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            padding: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            font-size: 25px;
+            z-index: 1000;
+            transition: transform 0.3s ease-in-out;
+        }
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 30px 0;
+            font-size: 14px;
+        }
+        footer a {
+            color: #28a745;
+        }
+
+        /* Medienabfragen für Reaktionsfähigkeit */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+        }
+        .brand-text {
+        font-size: 10px; /* Default font size */
+    }
+
+    /* Medium screens (Tablets) */
+    @media (min-width: 576px) {
+        .brand-text {
+            font-size: 12px;
+        }
+    }
+
+    /* Large screens (Laptops/Desktop) */
+    @media (min-width: 768px) {
+        .brand-text {
+            font-size: 14px;
+        }
+    }
+
+    /* Extra Large screens (Large Laptops/Desktops) */
+    @media (min-width: 1200px) {
+        .brand-text {
+            font-size: 16px;
+        }
+    }
+
+    /* Extra Extra Large screens (Very large screens) */
+    @media (min-width: 1600px) {
+        .brand-text {
+            font-size: 30px;
+        }
+    }
+    </style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="/index.html">
+            <img src="/logo.svg" alt="Entdecke Costa Rica Logo" style="max-height: 80px; margin-right: 10px;">
+            <span class="brand-text">Das Authentische Costa Rica</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+            
+                <li class="nav-item"><a class="nav-link" href="/index.html">Zurück zur Hauptseite</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+<!-- Dienstleistungen Abschnitt -->
+<section id="touren" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-5">Abenteuertouren</h2>
+        <div class="row g-4">
+       
+            <!-- Abenteuertouren -->
+<div class="col-md-4">
+    <div class="service-item p-4 rounded bg-white">
+        <i class="service-icon fas fa-hiking mb-3"></i>
+        <h4 class="mb-3">Bergwanderung am Arenal Vulkan</h4>
+        <p>Wandern Sie durch die atemberaubende Landschaft rund um den Arenal Vulkan. Erleben Sie die Natur und die majestätischen Aussichten auf den aktiven Vulkan.</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="service-item p-4 rounded bg-white">
+        <i class="service-icon fas fa-cogs mb-3"></i>
+        <h4 class="mb-3">Zip-Lining durch den Regenwald</h4>
+        <p>Fliegen Sie durch die Baumwipfel des tropischen Regenwaldes und erleben Sie die Flora und Fauna aus einer völlig neuen Perspektive.</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="service-item p-4 rounded bg-white">
+        <i class="service-icon fas fa-water mb-3"></i>
+        <h4 class="mb-3">Wasserfall-Wanderung in La Fortuna</h4>
+        <p>Erkunden Sie die wunderschöne Natur von La Fortuna und erreichen Sie den spektakulären La Fortuna Wasserfall, der von üppigem Grün umgeben ist.</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="service-item p-4 rounded bg-white">
+        <i class="service-icon fas fa-mountain mb-3"></i>
+        <h4 class="mb-3">Wanderung zum Cerro Chirripó</h4>
+        <p>Begeben Sie sich auf eine anspruchsvolle Wanderung zum höchsten Gipfel Costa Ricas und genießen Sie die spektakulären Ausblicke und die vielfältige Flora und Fauna.</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="service-item p-4 rounded bg-white">
+        <i class="service-icon fas fa-cogs mb-3"></i>
+        <h4 class="mb-3">Canopy Tour im Monteverde Cloud Forest</h4>
+        <p>Erleben Sie das aufregende Gefühl, sich von Plattform zu Plattform im Nebelwald von Monteverde zu schwingen, und genießen Sie die einzigartige Tierwelt dieses geheimen Paradieses.</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="service-item p-4 rounded bg-white">
+        <i class="service-icon fas fa-car mb-3"></i>
+        <h4 class="mb-3">4x4 Off-Road Tour im Guanacaste</h4>
+        <p>Entdecken Sie die raue Schönheit von Guanacaste bei einer Off-Road-Tour, bei der Sie durch unzugängliche Gebirgspfade und versteckte Naturschätze fahren.</p>
+    </div>
+</div>
+
+
+</div>
+</div>
+</section><!-- Dienstleistungen Abschnitt -->
+<section id="touren" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-5">Wildtier-Touren</h2>
+        <div class="row g-4">
+
+            <!-- Wildtier-Touren -->
+            <div class="col-md-4">
+                <div class="service-item p-4 rounded bg-white">
+                    <i class="service-icon fas fa-paw mb-3"></i>
+                    <h4 class="mb-3">Tierbeobachtung im Tortuguero Nationalpark</h4>
+                    <p>Erleben Sie die unberührte Natur des Tortuguero Nationalparks, Heimat vieler Tiere, einschließlich Kaimane, Affen und der legendären Meeresschildkröten.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="service-item p-4 rounded bg-white">
+                    <i class="service-icon fas fa-bug mb-3"></i>
+                    <h4 class="mb-3">Nachtwanderung im Corcovado Nationalpark</h4>
+                    <p>Erleben Sie die Geheimnisse des Dschungels bei einer Nachtwanderung und entdecken Sie nachtaktive Tiere, die im Regenwald von Corcovado leben.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="service-item p-4 rounded bg-white">
+                    <i class="service-icon fas fa-seedling mb-3"></i>
+                    <h4 class="mb-3">Vogelbeobachtung im Monteverde Nebelwald</h4>
+                    <p>Genießen Sie eine unvergessliche Vogelbeobachtungstour im Monteverde Nebelwald, einem Hotspot für viele endemische Vogelarten, darunter der Quetzal.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="service-item p-4 rounded bg-white">
+                    <i class="service-icon fas fa-paw mb-3"></i>
+                    <h4 class="mb-3">Safari im Palo Verde Nationalpark</h4>
+                    <p>Unternehmen Sie eine Safari im Palo Verde Nationalpark, um unzählige Vogelarten, Krokodile und andere tropische Tiere in ihrem natürlichen Lebensraum zu sehen.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-item p-4 rounded bg-white">
+                    <i class="service-icon fas fa-turtle mb-3"></i>
+                    <h4 class="mb-3">Schildkrötenbeobachtung in Ostional</h4>
+                    <p>Besuchen Sie das Schutzgebiet von Ostional und nehmen Sie an einer Schildkrötenbeobachtung teil, um diese majestätischen Kreaturen bei der Eiablage zu sehen.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="service-item p-4 rounded bg-white">
+                    <i class="service-icon fas fa-fish mb-3"></i>
+                    <h4 class="mb-3">Tauchgang zur Meeresfauna im Golf von Papagayo</h4>
+                    <p>Erforschen Sie die Unterwasserwelt des Golfs von Papagayo bei einem Tauchgang, wo Sie eine Vielzahl von Meereslebewesen, darunter bunte Fische und Korallen, entdecken können.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section id="touren" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-5">Öko-Touren</h2>
+        <div class="row g-4">
+
+              <!-- Öko-Touren -->
+<div class="col-md-4">
+    <div class="service-item p-4 rounded bg-white">
+        <i class="service-icon fas fa-leaf mb-3"></i>
+        <h4 class="mb-3">Vogelbeobachtung im Monteverde Cloud Forest</h4>
+        <p>Erleben Sie die Vielfalt an Vögeln im Monteverde Nebelwald, einem der besten Orte für Vogelbeobachtungen, begleitet von einem erfahrenen Naturführer.</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="service-item p-4 rounded bg-white">
+        <i class="service-icon fas fa-tree mb-3"></i>
+        <h4 class="mb-3">Naturwanderung im Corcovado Nationalpark</h4>
+        <p>Entdecken Sie die unberührte Natur des Corcovado Nationalparks und wandern Sie durch tropische Regenwälder, um die einzigartige Flora und Fauna zu erleben.</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="service-item p-4 rounded bg-white">
+        <i class="service-icon fas fa-sun mb-3"></i>
+        <h4 class="mb-3">Ökologische Tour zu den Wasserfällen von Río Celeste</h4>
+        <p>Genießen Sie eine nachhaltige Wanderung zu den atemberaubenden Wasserfällen von Río Celeste, einem Naturwunder mit leuchtend blauem Wasser.</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="service-item p-4 rounded bg-white">
+        <i class="service-icon fas fa-paw mb-3"></i>
+        <h4 class="mb-3">Wildtierbeobachtung im Tortuguero Nationalpark</h4>
+        <p>Erforschen Sie den Tortuguero Nationalpark, bekannt für seine Kanäle und Tierwelt, und erleben Sie die faszinierenden Tiere des tropischen Regenwaldes.</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="service-item p-4 rounded bg-white">
+        <i class="service-icon fas fa-globe mb-3"></i>
+        <h4 class="mb-3">Kulturelle Erlebnistour im indigene Dorf</h4>
+        <p>Tauchen Sie ein in die Kultur Costa Ricas bei einem Besuch eines indigenen Dorfes und erfahren Sie mehr über die Traditionen und Lebensweisen der Einheimischen.</p>
+    </div>
+</div>
+
+        </div>
+    </div>
+</section>
+       
+
+
+
+
+
+<section id="touren" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-5">Luxus-Touren</h2>
+        <div class="row g-4">
+
+            <!-- Luxus-Touren -->
+<div class="col-md-4">
+    <div class="service-item p-4 rounded bg-white">
+        <i class="service-icon fas fa-crown mb-3"></i>
+        <h4 class="mb-3">Private Helicopter Tour über den Arenal Vulkan</h4>
+        <p>Erleben Sie den majestätischen Arenal Vulkan aus der Luft bei einer exklusiven Hubschraubertour und genießen Sie atemberaubende Aussichten auf die Landschaft Costa Ricas.</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="service-item p-4 rounded bg-white">
+        <i class="service-icon fas fa-bed mb-3"></i>
+        <h4 class="mb-3">Fünf-Sterne-Übernachtung in einem Luxus-Eco-Lodge</h4>
+        <p>Genießen Sie einen exklusiven Aufenthalt in einer Luxus-Eco-Lodge in Costa Rica, die die perfekte Kombination aus Komfort und Natur bietet.</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="service-item p-4 rounded bg-white">
+        <i class="service-icon fas fa-ship mb-3"></i>
+        <h4 class="mb-3">Private Yacht-Tour entlang der Pazifikküste</h4>
+        <p>Erleben Sie eine luxuriöse Yachtfahrt entlang der Pazifikküste, mit exklusiven Anhalten in versteckten Buchten und die Möglichkeit, in kristallklarem Wasser zu schwimmen und zu schnorcheln.</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="service-item p-4 rounded bg-white">
+        <i class="service-icon fas fa-gem mb-3"></i>
+        <h4 class="mb-3">Exklusive Wellness- und Spa-Erlebnisse</h4>
+        <p>Entspannen Sie sich bei einem maßgeschneiderten Wellness-Programm in einem luxuriösen Spa, mit Massagen, natürlichen Behandlungen und atemberaubendem Blick auf die Natur.</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="service-item p-4 rounded bg-white">
+        <i class="service-icon fas fa-utensils mb-3"></i>
+        <h4 class="mb-3">Gourmet-Dinner in einem exklusiven Restaurant</h4>
+        <p>Genießen Sie ein Gourmet-Dinner in einem der besten Restaurants Costa Ricas, mit frisch zubereiteten, lokal inspirierten Gerichten und exquisite Weinauswahl.</p>
+    </div>
+</div>
+
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="touren" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-5">Kultur-Touren</h2>
+        <div class="row g-4">
+
+ <!-- Kultur-Touren -->
+<div class="col-md-4">
+    <div class="service-item p-4 rounded bg-white">
+        <i class="service-icon fas fa-theater-masks mb-3"></i>
+        <h4 class="mb-3">Kulturelle Stadtführung durch San José</h4>
+        <p>Erleben Sie die lebendige Kultur von Costa Rica bei einer Stadtführung durch San José. Entdecken Sie Museen, historische Gebäude und lokale Kunstszene.</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="service-item p-4 rounded bg-white">
+        <i class="service-icon fas fa-palette mb-3"></i>
+        <h4 class="mb-3">Besuch des Nationalmuseums von Costa Rica</h4>
+        <p>Erfahren Sie mehr über die Geschichte Costa Ricas, von der präkolumbianischen Zeit bis zur Gegenwart, bei einem Besuch des Nationalmuseums in San José.</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="service-item p-4 rounded bg-white">
+        <i class="service-icon fas fa-guitar mb-3"></i>
+        <h4 class="mb-3">Musikalische Entdeckungsreise in Guanacaste</h4>
+        <p>Genießen Sie traditionelle Musik und Tanz in Guanacaste. Lernen Sie die Musikgeschichte Costa Ricas kennen und erleben Sie einen lebendigen kulturellen Austausch mit lokalen Künstlern.</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="service-item p-4 rounded bg-white">
+        <i class="service-icon fas fa-utensils mb-3"></i>
+        <h4 class="mb-3">Kochkurs für traditionelle costa-ricanische Küche</h4>
+        <p>Tauchen Sie ein in die costa-ricanische Küche bei einem Kochkurs, in dem Sie lernen, traditionelle Gerichte wie Gallo Pinto, Ceviche und mehr zuzubereiten.</p>
+    </div>
+</div>
+
+
+        </div>
+    </div>
+</section>
+         
+
+<section id="touren" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-5">Familien-Touren</h2>
+        <div class="row g-4">
+<!-- Familien-Touren -->
+<div class="col-md-4">
+    <div class="service-item p-4 rounded bg-white">
+        <i class="service-icon fas fa-users mb-3"></i>
+        <h4 class="mb-3">Dschungel-Expedition für die ganze Familie</h4>
+        <p>Erkunden Sie den tropischen Regenwald von Costa Rica auf einer familienfreundlichen Wanderung, die für alle Altersgruppen geeignet ist. Erleben Sie die Tierwelt und lernen Sie die Natur kennen.</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="service-item p-4 rounded bg-white">
+        <i class="service-icon fas fa-child mb-3"></i>
+        <h4 class="mb-3">Reit-Tour zu den Wasserfällen von Montezuma</h4>
+        <p>Genießen Sie eine entspannte Reittour, die Sie zu den atemberaubenden Wasserfällen von Montezuma führt. Ideal für Familien, die Abenteuer und Natur in einem erleben möchten.</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="service-item p-4 rounded bg-white">
+        <i class="service-icon fas fa-tree mb-3"></i>
+        <h4 class="mb-3">Kanu-Abenteuer auf dem Tortuguero-Kanal</h4>
+        <p>Verbringen Sie einen aufregenden Tag auf dem Wasser und entdecken Sie die Tierwelt entlang des Tortuguero-Kanals. Eine perfekte Tour für Familien, die Natur hautnah erleben möchten.</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="service-item p-4 rounded bg-white">
+        <i class="service-icon fas fa-mountain mb-3"></i>
+        <h4 class="mb-3">Familienfreundliche Wanderung im Arenal-Nationalpark</h4>
+        <p>Unternehmen Sie eine kinderfreundliche Wanderung durch den Arenal-Nationalpark, wo Sie Vulkane, heiße Quellen und eine unglaubliche Flora und Fauna entdecken können.</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="service-item p-4 rounded bg-white">
+        <i class="service-icon fas fa-bicycle mb-3"></i>
+        <h4 class="mb-3">Familien-Bike-Tour durch den Manuel Antonio Nationalpark</h4>
+        <p>Erkunden Sie den berühmten Manuel Antonio Nationalpark auf einer sicheren und angenehmen Fahrrad-Tour, die speziell für Familien entwickelt wurde, um die Natur zu genießen.</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="service-item p-4 rounded bg-white">
+        <i class="service-icon fas fa-rocket mb-3"></i>
+        <h4 class="mb-3">Besuch des Nationalmuseums mit interaktiven Aktivitäten</h4>
+        <p>Erleben Sie die Geschichte Costa Ricas in einem familienfreundlichen Museum, das interaktive Ausstellungen und Aktivitäten bietet, um sowohl Kinder als auch Erwachsene zu fesseln.</p>
+    </div>
+</div>
+
+
+        </div>
+    </div>
+</section>
+<br>
+<p style="font-size: 30px; text-align: center;">Unsere Partner</p>
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <div class="d-flex justify-content-center">
+          <img src="/logo.svg" class="d-block w-50" alt="/logo.svg">
+        </div>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <div class="d-flex justify-content-center">
+          <img src="/logo.svg" class="d-block w-50" alt="/logo.svg">
+        </div>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center">
+          <img src="/logo.svg" class="d-block w-50" alt="/logo.svg">
+        </div>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.27991579584!2d-77.0368707!3d38.907211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86b6c43b85e47a69%3A0x1234567890!2sOsa%20Peninsula%2C%20Costa%20Rica!5e0!3m2!1sde!2sus!4v1648706195922!5m2!1sde!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+
+
+             <footer class="py-5 text-white" style="background-color: rgb(241, 160, 10); font-weight: 500">
+                <div class="container">
+                    <div class="row">
+                        <!-- Firmeninformation -->
+                        <div class="col-md-4 mb-4">
+                            <p><strong>Tukan Reiseabenteuer</strong></p>
+                            <p>
+                                Stellen Sie Ihr Unternehmen kurz vor, indem Sie auf Ihre Mission, Werte oder einzigartigen Dienstleistungen eingehen. Heben Sie hervor, was Sie auszeichnet und warum Kunden Ihrer Marke vertrauen sollten.
+                            </p>
+                        </div>
+            
+                        <!-- Kontaktinformationen -->
+                        <div class="col-md-4 mb-4">
+                            <p><strong>Kontaktinformationen</strong></p>
+                            <ul class="list-unstyled">
+                                <li><strong><i class="fas fa-envelope"></i> E-Mail:</strong> 
+                                    <a href="mailto:kontakt@ihrunternehmen.de" class="text-white text-decoration-none" aria-label="E-Mail an kontakt@ihrunternehmen.de">
+                                        kontakt@ihrunternehmen.de
+                                    </a>
+                                </li>
+                                <li><strong><i class="fas fa-phone-alt"></i> Telefon:</strong> 
+                                    <a href="tel:+1234567890" class="text-white text-decoration-none" aria-label="Anrufen unter +49 (234) 567-890">
+                                        +49 (234) 567-890
+                                    </a>
+                                </li>
+                                <li><strong><i class="fab fa-whatsapp"></i> WhatsApp:</strong> 
+                                    <a href="https://wa.me/1234567890" class="text-white text-decoration-none" aria-label="WhatsApp kontaktieren">
+                                        +49 (234) 567-890
+                                    </a>
+                                </li>
+                                <li><strong><i class="fas fa-business-time"></i> Geschäftszeiten:</strong> 
+                                    Montag bis Freitag, 9:00 - 18:00 Uhr. <br>
+                                    Samstags: 9:00 - 13:00 Uhr. Sonntags: Geschlossen.
+                                </li>
+                            </ul>
+                        </div>
+            
+                        <!-- Soziale Medien -->
+                        <div class="col-md-4 mb-4">
+                            <p><strong>Folgen Sie uns</strong></p>
+                            <div class="d-flex">
+                                <a href="https://facebook.com/ihreseite" class="text-white me-3" target="_blank" aria-label="Facebook">
+                                    <i class="fab fa-facebook fa-2x"></i>
+                                </a>
+                                <a href="https://twitter.com/ihreseite" class="text-white me-3" target="_blank" aria-label="Twitter">
+                                    <i class="fab fa-twitter fa-2x"></i>
+                                </a>
+                                <a href="https://linkedin.com/ihreseite" class="text-white me-3" target="_blank" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin fa-2x"></i>
+                                </a>
+                                <a href="https://instagram.com/ihreseite" class="text-white" target="_blank" aria-label="Instagram">
+                                    <i class="fab fa-instagram fa-2x"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <hr class="my-4">
+            
+                    <!-- Footer Bottom -->
+                    <div class="text-center">
+                        <p>&copy; 2024 <a href="https://www.nativainnovations.com" class="text-white text-decoration-none">Nativa Innovations</a>. Alle Rechte vorbehalten.</p>
+            
+                            <a href="#" class="text-white text-decoration-none">Datenschutzrichtlinie</a> | 
+                            <a href="#" class="text-white text-decoration-none">Nutzungsbedingungen</a>
+                        </p>
+                    </div>
+                </div>
+            </footer>
+
+<!-- Bootstrap-Bundle mit Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

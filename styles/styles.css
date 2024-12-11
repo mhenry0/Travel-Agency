@@ -1,0 +1,155 @@
+/* Globales Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333333;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+/* Ensure the container of the button is a flex container */
+.Treffen {
+display: flex;
+justify-content: center; /* Center horizontally */
+align-items: center; /* Center vertically */
+height: 10vh; /* Optional: set height of the container */
+}
+
+/* Orange button */
+.custom-orange-btn {
+    background-color: #FFA500; /* Orange color */
+    border-color: #FFA500; /* Optional: set border color to match */
+    color: #ffffff; /* Text color for normal state */
+    font-weight: 600;
+}
+
+/* Hover effect */
+.custom-orange-btn:hover {
+    background-color: #e68900; /* Darker orange for hover effect */
+    border-color: #e68900;
+    color: #ffffff; /* Keep the text color white on hover */
+}
+
+
+/* Navbar Styling */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand, .nav-link {
+    color: #ffa600 !important;
+    font-weight: 600;
+}
+.navbar-toggler-icon {
+    background-color: #ffa600;
+}
+
+/* Hero-Bereich */
+.hero {
+    background: url('/banner.webp') no-repeat center center;
+    background-size: cover;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+.hero h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.hero .btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+/* Service-Bereich */
+.service-icon {
+    font-size: 48px;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+.service-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Kontakt-Bereich */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    font-size: 25px;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 30px 0;
+    font-size: 14px;
+}
+footer a {
+    color: #28a745;
+}
+
+/* Medienabfragen für Reaktionsfähigkeit */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+}
+.brand-text {
+font-size: 10px; /* Default font size */
+}
+
+/* Medium screens (Tablets) */
+@media (min-width: 576px) {
+.brand-text {
+    font-size: 12px;
+}
+}
+
+/* Large screens (Laptops/Desktop) */
+@media (min-width: 768px) {
+.brand-text {
+    font-size: 14px;
+}
+}
+
+/* Extra Large screens (Large Laptops/Desktops) */
+@media (min-width: 1200px) {
+.brand-text {
+    font-size: 16px;
+}
+}
+
+/* Extra Extra Large screens (Very large screens) */
+@media (min-width: 1600px) {
+.brand-text {
+    font-size: 30px;
+}
+}
+
+
+footer {
+    background-color: orange !important;
+}
