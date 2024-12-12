@@ -44,7 +44,7 @@ height: 10vh; /* Optional: set height of the container */
 
 /* Hero-Bereich */
 .hero {
-    background: url('/banner.webp') no-repeat center center;
+    background: url('./banner.webp') no-repeat center center;
     background-size: cover;
     height: 120vh;
     display: flex;
